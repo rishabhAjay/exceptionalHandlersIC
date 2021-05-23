@@ -1,0 +1,29 @@
+
+<div class="topnav" id="myTopnav">
+    <img src="../images/ecommerce.png" alt="">
+    <div class="drop">
+        <button class="dropbtn">
+          Categories
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="drop-content">
+          <a class="drop-link" onclick="valueSender(1)">Accessories</a>
+          <a class="drop-link" onclick="valueSender(2)">Electronics</a>
+          <a class="drop-link" onclick="valueSender(3)">Entertainment</a>
+        </div>
+      </div>
+      <div class="search"><input type="text" id = "search-input" placeholder="Search.." name="search">
+        <button type="submit" id= "search" ><i class="fa fa-search"></i></button></div>
+            
+        <form action="" method="post">
+            <a href="/signin" id="active" class="signin-link" <%= signinVisibility %>>Sign in</a>
+            <a href="/logout" id="active" class="signin-link" <%= logoutVisibility %>>Log Out</a>
+            
+            <a href="/cart" <%= cartVisibility %>><i class="fa fa-shopping-cart"></i></a>
+            <a href="/help">Help</a>
+            <a href="/about">About Us</a>
+            <a href="/">Home</a>
+        </form>
+ 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>

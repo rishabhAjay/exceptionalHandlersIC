@@ -1,0 +1,60 @@
+/* CSS Document */
+
+
+.card{text-align: center; border: none; border-radius: 5px;-webkit-box-shadow: 12px 14px 22px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 14px 22px 2px rgba(0,0,0,0.75);
+box-shadow: 12px 14px 22px 2px rgba(0,0,0,0.75);
+margin-bottom: 100px;
+}
+
+footer .fa {
+    padding:0.8rem;
+  font-size: 1.3rem;
+  width: 3rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  }
+
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 1;
+    color: gainsboro;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #f09433;
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    color: white;
+  }
+
+  .fa-envelope {
+      background-color: black;
+      color: white;
+  }
+ .black-section {
+    background-color: grey;
+  }
+
+  .footer-container {
+      color: white;
+    text-align: center;
+    padding: 4% 15%;
+  }
+
+ .copyrights {
+     margin-top: 10px;
+ }

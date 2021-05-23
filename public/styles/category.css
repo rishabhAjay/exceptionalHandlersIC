@@ -1,0 +1,166 @@
+
+
+.left {
+  width: 75%;
+  padding: 10px 30px;
+}
+
+h1 {
+  display: inline-block;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  color: #4e0808;
+  border-bottom: 3px solid var(--pink);
+  padding-bottom: 10px;
+}
+
+.right {
+  width: 25%;
+  margin: 40px 0px 20px 20px;
+  padding: 5px 0px 30px 20px;
+}
+
+#acce,
+#elec,
+#enter {
+  display: none;
+}
+
+/*styling right side content*/
+
+/*headings*/
+.right > h2 {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  border-bottom: 3px solid var(--pink);
+  margin-right: 20px !important;
+  margin-bottom: 20px !important;
+  padding-bottom: 10px;
+}
+/*buttons*/
+.right > .sort-button {
+  display: block;
+  border: none;
+  width: 90%;
+  text-align: left;
+  background-color: #ddd;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 5px 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 610px) {
+  .right {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .right > .sort-button {
+    display: inline;
+    flex-direction: row;
+    width: 40%;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 5px 5px;
+    padding: 5px;
+  }
+  .left {
+    width: 90%;
+  }
+}
+
+.sort-button:hover {
+  background-color: #c7c5c5e6;
+}
+.sort-button:focus {
+  background-color: #c7c5c5e6;
+}
+
+.sort-button:active {
+  position: relative;
+  top: 0.1em;
+}
+
+.card{
+  border: 1px solid rgb(226 220 220) !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.itemBox {
+  padding: 5px;
+  overflow: hidden;
+  transform: scale(0.95);
+
+}
+
+.card-body {
+  margin-top: 20px;
+  height: 220px;
+  /* border-top: 2px solid #655959; */
+  overflow-wrap: break-word;
+  /* background-color: #fae0e79c; */
+}
+
+.card-body > p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.productName {
+  font-weight: bolder;
+  font-size: 1.6em ;
+  color: #ff3969;
+}
+
+.productDesc {
+  font-size: 1.3em;
+}
+
+.img-price {
+  font-size: 1.4em;
+}
+
+.itemBox:hover > img,
+.img-price {
+  transform: scale(1.1);
+}
+
+.img-responsive {
+  height: 200px;
+  object-fit: contain;
+}
+
+.btn-style {
+  width: 75%;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.8em !important;
+  position: absolute;
+  bottom: 1%;
+  left: 30px;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 610px) {
+  .btn-style {
+    width: 80%;
+    padding: 10px 0px;
+    margin: 30px 8% 15px 0%;
+  }
+  .card-body {
+    height: 250px;
+  }
+}
+
+.mainpage-btn {
+  background-color: #FF3969;
+    color: white;
+}
+
+.mainpage-btn:hover {
+  background-color: #ff006a;
+  color: white;
+}

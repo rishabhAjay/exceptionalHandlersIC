@@ -1,0 +1,196 @@
+
+.index-p{
+  position: absolute;
+width: 207px;
+height: 595px;
+left: 65px;
+top: 293px;
+background:#FFE5EC;
+font-family: Yellowtail;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+line-height: 42px;
+text-align: center;
+
+color: #000000;
+border-radius: 50px;
+}
+.index-h2{
+
+  position: absolute;
+  width: 207px;
+  height: 60px;
+  left: 86px;
+  top: 126px;
+  color:#FFFFFF;
+  font-size: 38px;
+  align-content: center;
+  line-height: 56px;
+  background: #FF3969;
+  font-family:Roboto;
+  text-align: center;
+  border-radius: nullpx;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.index-a{
+  position: absolute;
+width: 207px;
+height: 595px;
+left: 400px;
+top: 293px;
+
+font-family: Yellowtail;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+line-height: 42px;
+text-align: center;
+background: #FFE5EC;
+border-radius: 50px;
+color: #000000;
+}
+
+.index-b{
+  position: absolute;
+width: 207px;
+height: 595px;
+left: 730px;
+top: 293px;
+
+font-family: Yellowtail;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+line-height: 42px;
+text-align: center;
+background: #FFE5EC;
+border-radius: 50px;
+color: #000000;
+}
+
+.image-link {
+  position: absolute;
+width: 85px;
+height: 49px;
+left: 724px;
+top: 476px;
+background: url(005-linkedin.png);
+border-radius: 10px;
+}
+.image-twi{
+  position: absolute;
+width: 49px;
+height: 49px;
+left: 810px;
+top: 476px;
+background: url(005-linkedin.png);
+border-radius: 10px;
+}
+.image-youtube{
+  position: absolute;
+width: 51px;
+height: 69px;
+left: 874px;
+top: 465px;
+background: url(005-linkedin.png);
+border-radius: 10px;
+}
+.image-fb{
+  position: absolute;
+width: 48px;
+height: 50px;
+left: 774px;
+top: 550px;
+background: url(005-linkedin.png);
+border-radius: 10px;
+}
+.image-insta{
+  position: absolute;
+width: 50px;
+height: 50px;
+left: 850px;
+top: 550px;
+background: url(005-linkedin.png);
+border-radius: 10px;
+}
+.button2{
+  border: none;
+  color: white;
+  background-color:#FF3969;
+  padding: 25px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  margin: 200px 0px;
+  cursor: pointer;
+  border-radius:50px;
+}
+.button1{
+  border: none;
+  color: white;
+  background-color:#FF3969;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  margin: 20px 2px;
+  cursor: pointer;
+  border-radius:50px;
+}
+
+footer .fa {
+    padding:0.8rem;
+  font-size: 1.3rem;
+  width: 3rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  }
+
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 1;
+    color: gainsboro;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #f09433;
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    color: white;
+  }
+
+  .fa-envelope {
+      background-color: black;
+      color: white;
+  }
+ .black-section {
+    background-color: grey;
+  }
+
+  .footer-container {
+      color: white;
+    text-align: center;
+    padding: 4% 15%;
+  }
+
+ .copyrights {
+     margin-top: 10px;
+ }

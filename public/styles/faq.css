@@ -1,0 +1,29 @@
+.faq-container {
+    padding: 0 15% 0 15%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    border: none;
+   
+}
+.faq-element {
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 0 0 1px white;
+}
+.faq-element:active , .faq-element:focus, .faq-element:disabled {
+    box-shadow:none;
+    background-color: white;
+    border: none;
+    color: black;
+}
+.faq-element:hover {
+    border: 1px solid #ff006a;
+    background-color: white;
+    box-shadow: 0 0 1px white;
+    color: #ff006a;
+}
+
+.faq-textArea:focus {
+    border: 1px solid #ff006a;
+    box-shadow: 0 0 3px #ff006a ;
+}

@@ -1,0 +1,93 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About Us</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="../styles/navbar.css">
+   <link rel="stylesheet" href="../styles/mainpage.css">
+ 
+</head>
+<body background-image='pink.jpg'>
+
+  <%- include('partials/navbar') %>
+  <div id="main-content">
+  <div style="padding: 5% 5% 0 5%; text-align: center; font-weight: bold;" class="card-group">
+    <div class="card text-white">
+      <img class="card-img-top" src="../images/i9.jpg" alt="Card image top">
+      <div class="card-img-overlay">
+        <h1 class="card-title">About Us <br /> <br /></h1>
+        <p class="card-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+          book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+        </p>
+      </div>
+    </div>
+    <div class="card text-white">
+      <img class="card-img-top" src="../images/i7.jpg" alt="Card image top">
+      <div class="card-img-overlay">
+        <p class="card-text" font-size="200" <%=registerVisibility%>>We have more than 1000+ regular customers! <br /><br />If you are new, Sign-In and be a part of this wonderful Shoppers Community!</p>
+        <button type="button" class="btn btn-light btn-lg" <%=registerVisibility%>><a href="/register">Register Here</a></button> <br /><br />
+        <p class="card-text" <%=mainVisibility%>> Already a Customer? Continue Shopping!</p>
+        <button type="button" class="btn btn-light btn-lg" <%=mainVisibility%>><a href="/">Continue Shopping</a></button>
+      </div>
+    </div>
+    <div class="card text-white">
+      <img class="card-img-top" src="../images/i8.jpg" alt="Card image top">
+      <div class="card-img-overlay">
+        <h3 class="card-title">Follow Us On Social Media Handles</h3>
+        <p class="card-text">
+          The Follow up links are provided at the Bottom of this Web Page
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="pt-5 pb-5 cards">
+  <div class="container">
+    <div class="row" >
+      <div class="col-6" id = "item-row">
+          
+      </div>
+        <div class="col-12">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-interval="false">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row" id = "search-row">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+<%- include('partials/footer') %>
+     </body>
+     <script src="../scripts/navbar.js"></script>
+     <script src="../scripts/category.js"></script>
+
+     <script src="../scripts/search.js"></script>
+     <script>
+       window.addEventListener( "pageshow", function ( event ) {
+  var historyTraversal = event.persisted || ( typeof window.performance != "undefined" && window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    // Handle page restore.
+    //alert('refresh');
+    window.location.reload();
+  }
+});
+     </script>
+</html>

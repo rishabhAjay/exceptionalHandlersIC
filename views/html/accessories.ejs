@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="../styles/category.css" />
+      <link rel="stylesheet" href="../styles/navbar.css">
+    <title>Categories</title>
+  </head>
+  <body>
+    <!-- nav start -->
+    <div class="topnav" id="myTopnav">
+      <img src="../images/ecommerce.png" alt="">
+      <div class="drop">
+          <button class="dropbtn">
+            Categories
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="drop-content">
+            <a class="drop-link" onclick="valueSender(1)">Accessories</a>
+            <a class="drop-link" onclick="valueSender(2)">Electronics</a>
+            <a class="drop-link" onclick="valueSender(3)">Entertainment</a>
+          </div>
+        </div>
+        <div class="search" hidden><input type="text" id = "search-input" placeholder="Search.." name="search">
+          <button type="submit" id= "search" ><i class="fa fa-search"></i></button></div>
+              
+          <form action="" method="post">
+              <a href="/signin" id="active" class="signin-link" <%= signinVisibility %>>Sign in</a>
+              <a href="/logout" id="active" class="signin-link" <%= logoutVisibility %>>Log Out</a>
+              
+              <a href="/cart" <%= cartVisibility %>><i class="fa fa-shopping-cart"></i></a>
+              <a href="/help">Help</a>
+              <a href="/about">About Us</a>
+              <a href="/">Home</a>
+          </form>
+   
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+    <!-- nav end -->
+
+    <!--ACCESSORIES-->
+
+    <div id="acce">
+     
+      <div class="right">
+        <h2>Sort</h2>
+        <button class="sort-button list" data-filter="F">Featured</button>
+        <button class="sort-button list" data-filter="priceLowToHigh">PRICE : Low to High</button>
+        <button class="sort-button list" data-filter="priceHighToLow">PRICE : High to Low</button>
+        <br />
+        <h2>Sub Categories</h2>
+        <button class="sort-button active list" data-filter="all">All</button>
+        <button class="sort-button list" data-filter="covers">
+          Covers & Cases
+        </button>
+        <button class="sort-button list" data-filter="headphones">
+          Headphones
+        </button>
+        <button class="sort-button list" data-filter="chargers">
+          Chargers
+        </button>
+      </div>
+      <div class="left">
+        <h1 style="font-size: 4vw; margin: 20px 10px">Accesories</h1>
+            <div class="row" id = "accPic-container">
+    </div>
+  </div>
+  </div>
+      </div>
+      
+    </div>
+
+    <!--ELECTONICS-->
+
+    <div id="elec">
+      
+      <div class="right">
+        <h2>Sort</h2>
+        <button class="sort-button list" data-filter="F">Featured</button>
+        <button class="sort-button list" data-filter="priceLowToHigh">PRICE : Low to High</button>
+        <button class="sort-button list" data-filter="priceHighToLow">PRICE : High to Low</button>
+        <br />
+        <h2>Sub Categories</h2>
+        <button class="sort-button active list" data-filter="all">All</button>
+        <button class="sort-button list" data-filter="television">
+          Television
+        </button>
+        <button class="sort-button list" data-filter="desktop">
+          Desktop
+        </button>
+        <button class="sort-button list" data-filter="mobile">
+          Mobile
+        </button>
+        <button class="sort-button list" data-filter="refrigerator">
+          Refrigerator
+        </button>
+        <button class="sort-button list" data-filter="laptop">
+          Laptop
+        </button>
+      </div>
+      <div class="left">
+        <h1 style="font-size: 4vw; margin: 20px 10px">Electronics</h1>
+
+        <div class="row" id="elePic-container">
+
+        </div>
+      </div>
+    </div>
+
+    <div id="enter">
+      
+      <div class="right">
+        <h2>Sort</h2>
+        <button class="sort-button list" data-filter="F">Featured</button>
+        <button class="sort-button list" data-filter="priceLowToHigh">PRICE : Low to High</button>
+        <button class="sort-button list" data-filter="priceHighToLow">PRICE : High to Low</button>
+        <br />
+        <h2>Sub Categories</h2>
+        <button class="sort-button active list" data-filter="all">All</button>
+        <button class="sort-button list" data-filter="book">
+          Books
+        </button>
+        <button class="sort-button list" data-filter="instrument">
+          Musical instrument
+        </button>
+        <button class="sort-button list" data-filter="toy">
+          Toys
+        </button>
+      </div>
+      <div class="left">
+        <h1 style="font-size: 4vw; margin: 20px 10px">Entertainment</h1>
+
+        <div class="row" id="entPic-container">
+          
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="../scripts/category.js"> </script>
+    <script>
+      window.addEventListener( "pageshow", function ( event ) {
+ var historyTraversal = event.persisted || ( typeof window.performance != "undefined" && window.performance.navigation.type === 2 );
+ if ( historyTraversal ) {
+   // Handle page restore.
+   //alert('refresh');
+   window.location.reload();
+ }
+});
+    </script>
+  </body>
+</html>
